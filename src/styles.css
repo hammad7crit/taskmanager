@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+body,html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right, #8c12e3, #b314e3);
+    display: flex;
+    align-items: center;
+    font-family: "Outfit";
+    padding: 1rem;
+    gap: 2rem;
+}
+
+#sidebar {
+    width: 15rem;
+    height: 85vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: transparent;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+#projects-heading {
+    color: white;
+    text-align: center;
+}
+
+.project-button {
+    font-family: "Outfit";
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 25px;
+    background: linear-gradient(to right, #8c12e3, #b314e3);
+    padding: 1rem;
+    border: black;
+    transition: ease-in-out 0.3s;
+}
+
+.project-button:hover {
+    cursor: pointer;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.3);
+}
+
+.add-project-button {
+    font-family: "Outfit";
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 25px;
+    background: linear-gradient(to right, #8c12e3, #b314e3);
+    padding: 1rem;
+    border: black;
+    transition: ease-in-out 0.3s;
+}
+
+.add-project-button:hover {
+    cursor: pointer;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.3);
+}
