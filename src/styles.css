@@ -6,7 +6,7 @@ body,html {
     box-sizing: border-box;
     height: 100%;
     width: 100%;
-    background: linear-gradient(to right, #8c12e3, #b314e3);
+    background: linear-gradient(to right, #19191a, #000000);
     display: flex;
     align-items: center;
     font-family: "Outfit";
@@ -17,7 +17,9 @@ body,html {
 #sidebar {
     width: 15rem;
     height: 85vh;
-    background-color: rgba(0, 0, 0, 0.5);
+    background: linear-gradient(to right,
+        #141414,
+        #19191a);
     border: transparent;
     border-radius: 25px;
     display: flex;
@@ -33,11 +35,11 @@ body,html {
 
 .project-button {
     font-family: "Outfit";
-    color: white;
+    color: black;
     font-size: large;
     font-weight: bold;
     border-radius: 25px;
-    background: linear-gradient(to right, #8c12e3, #b314e3);
+    background: linear-gradient(to right, #ffffff, #d1d1d1);
     padding: 1rem;
     border: black;
     transition: ease-in-out 0.3s;
@@ -51,11 +53,11 @@ body,html {
 
 .add-project-button {
     font-family: "Outfit";
-    color: white;
+    color: black;
     font-size: large;
     font-weight: bold;
     border-radius: 25px;
-    background: linear-gradient(to right, #8c12e3, #b314e3);
+    background: linear-gradient(to right, #ffffff, #d1d1d1);
     padding: 1rem;
     border: black;
     transition: ease-in-out 0.3s;

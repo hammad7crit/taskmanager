@@ -2,7 +2,6 @@ import "./styles.css";
 import "./main.css";
 import "./taskUI.css";
 let mainWindow = document.querySelector("#main");
-let buttonClicked = 0;
 let projectCreationUI = document.createElement("div");
 let closeProjectOptional = document.createElement("button");
 
@@ -33,10 +32,11 @@ const optionalProjectClose = () => {
 };
 
 const addNewProject = () => {
+    let buttonClicked = false;
     let addProjectButton = document.querySelector(".add-project-button");
     addProjectButton.addEventListener("click", () => {
-        buttonClicked++;
-        if (buttonClicked === 1) {
+        if (buttonClicked === false) {
+            buttonClicked === true;
             projectCreationUI.classList.add("project-create-ui");
             mainWindow.appendChild(projectCreationUI);
 
@@ -44,19 +44,19 @@ const addNewProject = () => {
                 projectCreationUI.classList.add("show");
             });
         };
-        closeProjectOptional.addEventListener("click", () => {
-            if (buttonClicked === 1) {
-                buttonClicked -= 1;
-                projectCreationUI.classList.remove("show");
-                projectCreationUI.classList.add("hide");
+    });
+    
+    closeProjectOptional.addEventListener("click", () => {
+    
+        projectCreationUI.classList.remove("show");
+        projectCreationUI.classList.add("hide");
 
-                projectCreationUI.addEventListener("transitionend", function transitionHandler () {
-                    projectCreationUI.remove();
-                    projectCreationUI.classList.remove("hide");
-                    projectCreationUI.removeEventListener("transitionend", transitionHandler);
-                })
-            };
-        });
+        projectCreationUI.addEventListener("transitionend", function transitionHandler () {
+            projectCreationUI.remove();
+            projectCreationUI.classList.remove("hide");
+            projectCreationUI.removeEventListener("transitionend", transitionHandler);
+        })
+        
     });
 };
 
