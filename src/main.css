@@ -22,7 +22,7 @@
 }
 
 .add-button {
-    width: auto;
+    width: 15rem;
     max-width: 200px;
     font-family: "Outfit", sans-serif;
     background: linear-gradient(to right, #ffffff, #d1d1d1);
@@ -31,7 +31,7 @@
     border: none;
     font-size: 1.1rem;
     font-weight: 600;
-    border-radius: 15px;
+    border-radius: 10px;
     transition: all 0.3s ease-in-out;
     align-self: flex-start;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
