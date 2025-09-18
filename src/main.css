@@ -1,7 +1,6 @@
-/* main.css */
 #main {
-    width: 70rem;
-    height: 85vh;
+    width: 75rem;
+    height: 90vh;
     background-color: #111111;
     border: none;
     border-radius: 25px;
@@ -9,41 +8,43 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.9);
     overflow-y: auto;
+    overflow-x: hidden;
     color: #f1f1f1;
 }
 
 .top-heading {
     color: #ffffff;
-    font-size: 2rem;
+    font-size: 2.2rem;
     margin: 0;
-    letter-spacing: 1px;
+    letter-spacing: 1.2px;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .add-button {
-    width: 15rem;
-    max-width: 200px;
+    width: auto;
+    max-width: 220px;
     font-family: "Outfit", sans-serif;
-    background: linear-gradient(to right, #ffffff, #d1d1d1);
-    color: black;
-    padding: 1.2rem 2rem;
+    background: linear-gradient(to right, #ffffff, #e0e0e0);
+    color: #000000;
+    padding: 1.2rem 2.5rem;
     border: none;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 600;
-    border-radius: 10px;
+    border-radius: 12px;
     transition: all 0.3s ease-in-out;
     align-self: flex-start;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 }
 
 .add-button:hover {
     cursor: pointer;
     transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3);
 }
 
 .add-button:focus {
     outline: none;
-    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.4);
 }

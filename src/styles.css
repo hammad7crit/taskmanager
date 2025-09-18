@@ -1,73 +1,85 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
-body,html {
+body,
+html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     height: 100%;
     width: 100%;
-    background: linear-gradient(to right, #19191a, #000000);
+    background: linear-gradient(to right, #0a0a0a, #1a1a1a);
     display: flex;
     align-items: center;
-    font-family: "Outfit";
-    padding: 1rem;
-    gap: 2rem;
+    justify-content: center;
+    font-family: "Outfit", sans-serif;
+    padding: 2rem;
+    gap: 3rem;
 }
 
 #sidebar {
-    width: 15rem;
-    min-height: 85vh;
-    max-height: auto;
-    background: linear-gradient(to right,
-        #141414,
-        #19191a);
-    border: transparent;
+    width: 18rem;
+    min-height: 90vh;
+    max-height: 90vh;
+    overflow-y: auto;
+    background: linear-gradient(to bottom, #141414, #19191a);
+    border: none;
     border-radius: 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 2rem;
-    gap: 2rem;
+    gap: 1.5rem;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.8);
 }
 
 #projects-heading {
-    color: white;
+    color: #ffffff;
     text-align: center;
+    font-size: 1.8rem;
+    margin: 0 0 1rem 0;
+    letter-spacing: 1px;
 }
 
 .project-button {
-    width: 80%;
-    font-family: "Outfit";
-    color: black;
-    font-size: large;
-    font-weight: bold;
-    border-radius: 10px;
-    background: linear-gradient(to right, #ffffff, #d1d1d1);
-    padding: 1rem;
-    border: black;
-    transition: ease-in-out 0.3s;
+    width: 90%;
+    font-family: "Outfit", sans-serif;
+    color: #000000;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 12px;
+    background: linear-gradient(to right, #ffffff, #e0e0e0);
+    padding: 1.2rem;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .project-button:hover {
     cursor: pointer;
-    transform: translateY(-5px);
-    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.3);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3);
 }
+
 .add-project-button {
-    width: 80%;
-    font-family: "Outfit";
-    color: black;
-    font-size: large;
-    font-weight: bold;
-    border-radius: 10px;
-    background: linear-gradient(to right, #ffffff, #d1d1d1);
-    padding: 1rem;
-    border: black;
-    transition: ease-in-out 0.3s;
+    width: 90%;
+    font-family: "Outfit", sans-serif;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 12px;
+    background: transparent;
+    padding: 1.2rem;
+    border: 2px dashed #ffffff;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    margin-top: auto;
 }
 
 .add-project-button:hover {
     cursor: pointer;
-    transform: translateY(-5px);
-    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3);
+    border-style: solid;
 }
